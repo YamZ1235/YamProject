@@ -1,0 +1,6 @@
+@ApiZada_HostAddress = http://localhost:5062
+
+GET {{ApiZada_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

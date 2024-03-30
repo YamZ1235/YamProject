@@ -1,0 +1,55 @@
+﻿<Page x:Class="YamWpf.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:yamwpf="clr-namespace:YamWpf"
+        Title="Register Screen" Height="400" Width="836">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Stretch="Fill"  Source="C:\Users\student.HP-6H6HCV2\Downloads\AdobeStock_74269462-3000X2000.jpg" Margin="-15,5,2,16" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" Grid.RowSpan="4">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.489"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="3.991"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Width="267" Height="50"  Margin="10,40,0,0" Text="   Bank Zada" FontWeight="Bold" FontSize="30" VerticalAlignment="Top" FontFamily="Ravie" Foreground="#FF0514FF" FontStyle="Italic" FontStretch="ExtraCondensed"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="           Branch: "  FontWeight="ExtraBold" BorderBrush="Black" Margin="111,32,12,26" FontSize="18" Foreground="White" HorizontalAlignment="Right"/>
+        <ComboBox Name="BranchCoboBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,32,0,0" Width="200" SelectedItem="{Binding Path=SelectedBranch}" ItemsSource="{Binding Path=BranchNums}" Grid.Column="1" Grid.Row="2" Height="26"/>
+        <Label Content="AccountNumber:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,31,0,0" FontWeight="ExtraBold" Grid.Row="1" Width="140" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="txtAccountNumber" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,31,0,0" Width="200" Height="25" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Content="Phone Number:" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="104,25,0,0" RenderTransformOrigin="0.447,1.606" FontWeight="ExtraBold" Height="46" Grid.Row="3" Width="163" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0" Width="200" Height="25" Grid.Row="3" Grid.Column="1"/>
+
+        <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="79,0,0,0" Width="100" Click="Login_Click" Height="42" RenderTransformOrigin="0.5,0.5" Grid.Row="3" Grid.Column="2" OpacityMask="#FF191919"/>
+        <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\download__1_-removebg-preview.png" Margin="87,3,62,22" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.Row="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-126.844"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="658,262,0,-5" Source="C:\Users\student.HP-6H6HCV2\Downloads\38a3d6_d8670512205f40c08b0e28ac37a1ba29~mv2.gif"/>
+        <TextBlock  Grid.Column="2" Height="23" Grid.Row="2" VerticalAlignment="Top" Margin="45,67,44,0">
+    <Hyperlink  NavigateUri="Register.xaml">
+        dont have an account? Register!
+    </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>

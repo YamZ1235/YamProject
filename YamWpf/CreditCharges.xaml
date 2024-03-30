@@ -1,0 +1,59 @@
+﻿<Page x:Class="YamWpf.CreditCharges"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:YamWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreditCharges">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="Gold" Opacity="0.92"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Height="440" Margin="0,10,115,0" VerticalAlignment="Top" Grid.RowSpan="3" >
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+            <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\png-clipart-money-money-thumbnail-removebg-preview.png" Width="123"/>
+        </StackPanel>
+        <Image  Source="C:\Users\student.HP-6H6HCV2\Downloads\pngimg.com - credit_card_PNG112.png" Grid.Column="2" Margin="156,-6,0,142" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="268.96"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\hand-holding-out-credit-card-600nw-2259495231__1_-removebg-preview.png" Grid.Column="2" Margin="51,0,-33,11" Grid.Row="2"/>
+        <Image Source="C:\Users\student.HP-6H6HCV2\Downloads\154523-credit-card-holding-hand-png-free-photo.png" Margin="83,4,0,0" RenderTransformOrigin="0.5,0.5" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="238" Grid.RowSpan="2" Width="182" Grid.Row="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.508"/>
+                    <RotateTransform Angle="268.393"/>
+                    <TranslateTransform X="-0.029" Y="-1.033"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" FontWeight="Bold" FontSize="28" FontStyle="Italic" FontFamily="Kristen ITC" Grid.ColumnSpan="2" Margin="266,0,0,0">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="THIS IS "/><LineBreak/><Run Text="YOUR CHARGES"/></TextBlock>
+    </Grid>
+</Page>
